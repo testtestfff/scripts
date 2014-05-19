@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # version sécurisée, remplacer les xxx par de vraies valeurs
+# POUR FAIRE FONCTIONNER CE SCRIPT IL FAUT :
+# remplacer les *** par de vraies valeurs
+# remplacer le xxx par de vraies valeurs
 
 usage="$(basename "$0") [-m methode] [-P protocole] [-d duration] [-p port] [-b bandwidth] [-i interval] [-o occurences] [-h host file] [-H host] [-u user] [-s password] [-w wait] [-v] [-S] [-T] [-n] -- 
 

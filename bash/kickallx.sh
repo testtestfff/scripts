@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# POUR FAIRE FONCTIONNER CE SCRIPT IL FAUT :
+# remplacer les *** par de vraies valeurs
+# remplacer le xxx par de vraies valeurs
+
 #./kickallx.sh -c 20s -f capture.txt -d 180 -b 600 -g 5 -i eth0
 #./kickallx.sh -c 20s -f capture.txt -d 60 -b 750 -g 4
 
@@ -17,7 +21,7 @@ capture_duration=15s
 file=capture.txt
 duration=60
 bandwidth=600
-method=methode
+method=****
 port=3074
 interval=0
 occurences=1
