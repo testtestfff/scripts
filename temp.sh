@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# ecrit la temperature du GPU à intervalles réguliers dans un fichier de log
+
 #max_mega=2
 #max_bytes=$(($max_mega*1024*1024))
 

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# calcule la temperature max
+# prérequis : utiliser temp.sh pour générer temp.log 
+
 re='^[0-9]+$'
 current=0
 while read line
