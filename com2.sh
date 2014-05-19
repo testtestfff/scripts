@@ -1,6 +1,6 @@
 
 
-# affiche le bus en fonction d'un fichier
+# affiche le bus en fonction d'un fichier - test
 # find /sys/bus/usb/devices/usb*/ -maxdepth 12 -name serial | awk -F '\n' '{for(i=1; i<=NF; i++){print $i; system("cat " $i)}}' | tr "\\n" ";" | awk -F ';' -v idtech="$(ll /dev/disk/by-id | grep $(df /media/multimedia2 | tail -1 | awk -F ' ' '{print $1}' | awk -F '/' '{print $NF}') )" '{for(i=1; i<=NF; i++){if (i%2==0 && match(idtech,$i)){printf $(i-1);break;}}printf "\n" }' | sed 's/serial//' | awk -F '/' '{printf $(NF-1)"\n"}'
 
 sudo lshw -businfo | grep -B 1 -m 1 "sdg" | head -n 1 | awk '{print $1}' | cut -c 5- | tr ":" "-"
